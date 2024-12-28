@@ -1,0 +1,13 @@
+veri tabanı oluşturma
+
+CREATE DATABASE users DEFAULT CHARACTER SET utf8 COLLATE utf8_turkish_ci;
+
+Tablo oluşturma
+
+CREATE TABLE users(
+
+    id SMALLINT AUTO_INCREMENT PRIMARY KEY,
+    password varchar(120) NOT NULL,
+    Kayıt_Tarih datetime DEFAULT CURRENT_TIMESTAMP
+
+);
